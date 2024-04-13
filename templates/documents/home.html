@@ -1,0 +1,113 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'images/logo.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Sharq University</title>
+</head>
+<body>
+    <div class="bgImage" id="background_image"></div>
+    <div class="land_view">
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+                <div class="logo-info">
+                    <span>SHARQ University</span> <span class="more_info">Sharqona qadriyatlar va dunyoviy ta'lim</span>
+                </div>
+            </div>
+            <div class="links">
+                <span>
+                    <a href="#">Who we are</a>
+                </span>
+                <span>
+                    <a href="#">Learning modules</a>
+                </span>
+                <span>
+                    <a href="#">Resources</a>
+                </span>
+                <span>
+                    <a href="#">Our team</a>
+                </span>
+                <span>
+                    <a href="#">Contact</a>
+                </span>
+            </div>
+        </div>
+        <div class="text-section hidden">
+            <div>
+                <h1>SHARQ University: dunyoning sharqona sharqiyatlari</h1>
+                <h2>Dunyoni o'zgartirishga intilayotgan liderlar maskani</h2>
+                <a class="button-land" href="#">Hujjat topshirish</a>
+            </div>
+            <div class="icon_image">
+                <img src="{% static 'images/main_logo.png' %}" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <h1 class="indexing">
+        Universitet Fakultetlari
+    </h1>
+    <div class="faculties">
+        <div class="cross first_cross"></div>
+        <div class="cross second_cross"></div>
+        <a class="hidden" href="#">
+            <div class="card">
+                <img src="{% static 'images/arc_icon.png' %}" alt="Fakultet rasmi">
+                <h1>Arxitektura va muxandislik fakulteti</h1>
+                <p>
+                    1. 60730100 - Arxitektura (turlari bo‘yicha) <br>
+                    2. 60731300 - Ko‘chmas mulkni boshqarish<br>
+                    3. 60713400 - Atrof-muhit muhandisligi<br>
+                    4. 61020200 - Mehnat muhofazasi va texnika xavfsizligi (tarmoqlar bo‘yicha)<br>
+                </p>
+            </div>
+        </a>
+        <a class="hidden" href="#">
+            <div class="card">
+                <img src="{% static 'images/comp_eco_icon.png' %}" alt="Fakultet rasmi">
+                <h1>Axborot texnologiyalari (IT) va iqtisodiyot fakulteti</h1>
+                <p>
+                    1. 60610800 - Axborot texnologiyalarining dasturiy ta’minoti<br>
+                    2. 60610700 - Sun’iy intellekt<br>
+                    3. 60612100 – Kiberxavfsizlik injiniringi<br>
+                    4. 60310100 - Iqtisodiyot (tarmoqlar va sohalar bo‘yicha)<br>
+                    5. 60410400 - Moliya va moliyaviy texnologiyalar<br>
+                </p>
+            </div>
+        </a>
+        <a class="hidden" href="#">
+            <div class="card">
+                <img src="{% static 'images/chemical_icon.png' %}" alt="Fakultet rasmi">
+                <h1>Sanoat va umumtexnika fakulteti</h1>
+                <p>1. 60721500 - Konchilik ishi (faoliyat turlari bo‘yicha)<br>
+                    2. 60712100 - Metallurgiya (metall turlari bo‘yicha)<br>
+                    3. 60710100 - Kimyoviy texnologiya (ishlab chiqarish turlari bo‘yicha)<br>
+                    4. 60710600 - Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha)<br>
+                </p>
+            </div>
+        </a>
+        <a class="hidden" href="#">
+            <div class="card">
+                <img src="{% static 'images/pedogogy.png' %}" alt="Fakultet rasmi">
+                <h1>Ijtimoiy gumanitar fanlar va tillar fakulteti</h1>
+                <p>
+                    1. 60110100 – Pedagogika<br>
+                    2. 60310900 - Psixologiya (faoliyat turlari bo‘yicha)<br>
+                    3. 60110200 - Maktabgacha ta’lim<br>
+                    4. 60110500 - Boshlang‘ich ta’lim<br>
+                    5. 60230100 - Ta’lim yo‘nalishi: Filologiya va tillarni o‘qitish (tillar bo‘yicha)<br>
+                </p>
+            </div>
+        </a>
+    </div>
+    <h1 class="indexing edu_dir">Ta'lim yo'nalishlari</h1>
+    <div class="bgImage"></div>
+
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>

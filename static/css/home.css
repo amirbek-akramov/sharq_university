@@ -1,0 +1,247 @@
+::-webkit-scrollbar {
+    background: #0D324D;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.hidden {
+    user-select: none;
+    opacity: 0;
+    transition: 1.8s all;
+    transform: translateY(50px);
+}
+
+.hidden.show {
+    user-select: auto;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bgImage {
+    background: url("../images/background.jpg") fixed left;
+    background-size: 140%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.bgImage::after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.land_view {
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    display: grid;
+    grid-template-rows: 230px auto;
+}
+
+.land_view .navbar {
+    align-self: flex-start;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.land_view .navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 20px;
+}
+
+.land_view .navbar .logo .logo-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.land_view .navbar .logo .logo-info .more_info{
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.land_view .navbar .logo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.land_view .navbar .links {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.land_view .navbar .links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+.land_view .navbar .links a:hover {
+    background: #0D324D;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.land_view .text-section {
+    padding: 0 80px 0 80px;
+    align-self: start;
+}
+
+
+.land_view .text-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.land_view .text-section .icon_image {
+    width: 120%;
+    margin-right: 10%;
+}
+
+.land_view .text-section .icon_image img {
+    width: 100%;
+}
+
+.land_view .text-section h1{
+    width: 100%;
+    font-size: 3.5em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.land_view .text-section h2 {
+    font-weight: 200;
+    margin-bottom: 5%;
+}
+
+.indexing {
+    text-align: center;
+    color: #0D324D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/*.indexing::before {*/
+/*    content: "Universitet Fakultetlari";*/
+/*    position: absolute;*/
+/*    transform: translateY(25px);*/
+/*}*/
+
+.land_view .text-section .button-land {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    border: 1px white solid;
+    padding: 15px 40px;
+}
+
+.land_view .text-section .button-land:hover {
+    text-decoration: none;
+    border-color: black;
+    background-color: #0D324D;
+}
+
+/* Faculties section */
+
+.faculties {
+    padding: 0 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.faculties a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #0D324D;
+    width: 80%;
+}
+
+.faculties a .card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.faculties a .card img {
+    width: 70px;
+}
+
+.faculties a .card h1 {
+    padding: 0 15px 0 15px;
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+.faculties a .card p {
+    padding: 0 20px 0 20px;
+    color: #0D324D;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.indexing.edu_dir {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    color: white;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.cross {
+    background: #cccccc;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+}
+
+.cross.second_cross {
+    transform: rotate(90deg);
+    width: 50%;
+}
