@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4331927-d7dc-4359-81eb-fa2cc03989fd" name="Changes" comment="New project">
-      <change afterPath="$PROJECT_DIR$/documents/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/documents/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/documents/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/documents/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/documents/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/documents/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/documents/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharq_university/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/sharq_university/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharq_university/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sharq_university/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/documents/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/documents/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Django Server.sharq_university.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -111,6 +112,11 @@
       <workItem from="1712821071626" duration="9000" />
       <workItem from="1712855618895" duration="2551000" />
       <workItem from="1712929127804" duration="2953000" />
+      <workItem from="1713016472518" duration="4623000" />
+      <workItem from="1713023656214" duration="626000" />
+      <workItem from="1713080163481" duration="1018000" />
+      <workItem from="1713173754072" duration="13000" />
+      <workItem from="1713635003264" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="New project">
       <option name="closed" value="true" />

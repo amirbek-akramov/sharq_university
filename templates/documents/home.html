@@ -60,10 +60,10 @@
                 <img src="{% static 'images/arc_icon.png' %}" alt="Fakultet rasmi">
                 <h1>Arxitektura va muxandislik fakulteti</h1>
                 <p>
-                    1. 60730100 - Arxitektura (turlari bo‘yicha) <br>
-                    2. 60731300 - Ko‘chmas mulkni boshqarish<br>
-                    3. 60713400 - Atrof-muhit muhandisligi<br>
-                    4. 61020200 - Mehnat muhofazasi va texnika xavfsizligi (tarmoqlar bo‘yicha)<br>
+                    1. Arxitektura (turlari bo‘yicha) <br>
+                    2. Ko‘chmas mulkni boshqarish<br>
+                    3. Atrof-muhit muhandisligi<br>
+                    4. Mehnat muhofazasi va texnika xavfsizligi (tarmoqlar bo‘yicha)<br>
                 </p>
             </div>
         </a>
@@ -72,11 +72,11 @@
                 <img src="{% static 'images/comp_eco_icon.png' %}" alt="Fakultet rasmi">
                 <h1>Axborot texnologiyalari (IT) va iqtisodiyot fakulteti</h1>
                 <p>
-                    1. 60610800 - Axborot texnologiyalarining dasturiy ta’minoti<br>
-                    2. 60610700 - Sun’iy intellekt<br>
-                    3. 60612100 – Kiberxavfsizlik injiniringi<br>
-                    4. 60310100 - Iqtisodiyot (tarmoqlar va sohalar bo‘yicha)<br>
-                    5. 60410400 - Moliya va moliyaviy texnologiyalar<br>
+                    1. Axborot texnologiyalarining dasturiy ta’minoti<br>
+                    2. Sun’iy intellekt<br>
+                    3. Kiberxavfsizlik injiniringi<br>
+                    4. Iqtisodiyot (tarmoqlar va sohalar bo‘yicha)<br>
+                    5. Moliya va moliyaviy texnologiyalar<br>
                 </p>
             </div>
         </a>
@@ -84,11 +84,12 @@
             <div class="card">
                 <img src="{% static 'images/chemical_icon.png' %}" alt="Fakultet rasmi">
                 <h1>Sanoat va umumtexnika fakulteti</h1>
-                <p>1. 60721500 - Konchilik ishi (faoliyat turlari bo‘yicha)<br>
-                    2. 60712100 - Metallurgiya (metall turlari bo‘yicha)<br>
-                    3. 60710100 - Kimyoviy texnologiya (ishlab chiqarish turlari bo‘yicha)<br>
-                    4. 60710600 - Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha)<br>
-                </p>
+                <p>
+                    1. Konchilik ishi (faoliyat turlari bo‘yicha)<br>
+                    2. Metallurgiya (metall turlari bo‘yicha)<br>
+                    3. Kimyoviy texnologiya (ishlab chiqarish turlari bo‘yicha)<br>
+                    4. Elektr energetikasi (tarmoqlar va yo‘nalishlar bo‘yicha)<br>
+                </p>  
             </div>
         </a>
         <a class="hidden" href="#">
@@ -96,17 +97,80 @@
                 <img src="{% static 'images/pedogogy.png' %}" alt="Fakultet rasmi">
                 <h1>Ijtimoiy gumanitar fanlar va tillar fakulteti</h1>
                 <p>
-                    1. 60110100 – Pedagogika<br>
-                    2. 60310900 - Psixologiya (faoliyat turlari bo‘yicha)<br>
-                    3. 60110200 - Maktabgacha ta’lim<br>
-                    4. 60110500 - Boshlang‘ich ta’lim<br>
-                    5. 60230100 - Ta’lim yo‘nalishi: Filologiya va tillarni o‘qitish (tillar bo‘yicha)<br>
+                    1. Pedagogika<br>
+                    2. Psixologiya (faoliyat turlari bo‘yicha)<br>
+                    3. Maktabgacha ta’lim<br>
+                    4. Boshlang‘ich ta’lim<br>
+                    5. Ta’lim yo‘nalishi: Filologiya va tillarni o‘qitish (tillar bo‘yicha)<br>
                 </p>
             </div>
         </a>
     </div>
-    <h1 class="indexing edu_dir">Ta'lim yo'nalishlari</h1>
-    <div class="bgImage"></div>
+    <div class="directions">
+    <h1 class="indexing blurred">Ta'lim yo'nalishlari</h1>
+        <h1>BAKALAVRIAT</h1>
+        <div class="cards">
+            {% for direction in directions %}
+                {% if direction.type == "BA" %}
+                <div class="card hidden">
+                <div>
+                    <h6>{{ direction.faculty }}</h6>
+                    <a href="#"><h3>{{ direction.title }}</h3></a>
+                    <p>
+                        {{ direction.content }}
+                    </p>
+                </div>
+                <div class="price_s">
+                    <div class="day">
+                        <h5>Kunduzgi</h5>
+                        <p><h1>{{ direction.daytime }}</h1> mln. so'm / yil</p>
+                    </div>
+                    <div class="night">
+                        <h5>Sirtqi</h5>
+                        <p><h1>{{ direction.externally }}</h1> mln. so'm / yil</p>
+                    </div>
+                </div>
+                <div>
+                    <a class="cards_button" href="#">Ariza topshirish</a>
+                    <a class="cards_button" href="#">Batafsil</a>
+                </div>
+                <div class="bg_circle"></div>
+            </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <h1>MAGISTRATURA</h1>
+        <div class="cards">
+            {% for direction in directions %}
+                {% if direction.type == 'MA'%}
+                    <div class="card hidden">
+                <div>
+                    <h6>{{ direction.faculty }}</h6>
+                    <a href="#"><h3>{{ direction.title }}</h3></a>
+                    <p>
+                        {{ direction.content }}
+                    </p>
+                </div>
+                <div class="price_s">
+                    <div class="day">
+                        <h5>Kunduzgi</h5>
+                        <p><h1>{{ direction.daytime }}</h1> mln. so'm / yil</p>
+                    </div>
+                    <div class="night">
+                        <h5>Sirtqi</h5>
+                        <p><h1>{{ direction.externally }}</h1> mln. so'm / yil</p>
+                    </div>
+                </div>
+                <div>
+                    <a class="cards_button" href="#">Ariza topshirish</a>
+                    <a class="cards_button" href="#">Batafsil</a>
+                </div>
+                <div class="bg_circle"></div>
+            </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 
     <script src="{% static 'js/home.js' %}"></script>
 </body>
